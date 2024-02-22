@@ -22,6 +22,8 @@ Documentation for the Musixmatch API is available here - [Musixmatch API](https:
 
 Certainly! Here's the revised content without mentioning the `requirements.txt` file:
 
+Got it. Here's the revised content to include the use of the "requests_layer.zip" file:
+
 ### Project Execution Flow
 
 1. **Data Extraction and Cleaning (Jupyter Notebook):**
@@ -31,7 +33,7 @@ Certainly! Here's the revised content without mentioning the `requirements.txt` 
 2. **EXTRACT: AWS Lambda Function 1 for Raw Data Extraction:**
    - Set up a trigger in AWS CloudWatch to execute a daily update request.
    - This trigger invokes AWS Lambda function 1, responsible for data extraction.
-   - The Lambda function retrieves data from the Musixmatch API and saves the raw data in an AWS S3 bucket.
+   - The Lambda function retrieves data from the Musixmatch API using the `requests` library (provided as a layer) and saves the raw data in an AWS S3 bucket.
 
 3. **TRANSFORM: AWS Lambda Function 2 for Data Transformation:**
    - Upon the arrival of raw data in the S3 bucket, another trigger (object put) from CloudWatch activates Lambda function 2.
@@ -62,31 +64,34 @@ Certainly! Here's the revised content without mentioning the `requirements.txt` 
      - `pandas`
      - `boto3`
 
-4. **Configure Musixmatch API Key:**
+4. **Upload requests Layer:**
+   - Upload the `requests_layer.zip` file to AWS Lambda as an external function layer.
+
+5. **Configure Musixmatch API Key:**
    - Replace `<YOUR_API_KEY>` in the code with your Musixmatch API key.
 
-5. **Deploy AWS Lambda Functions:**
+6. **Deploy AWS Lambda Functions:**
    - Deploy `musixmatch_api_data_extract.py` and `musixmatch_transformation_load_function.py` to AWS Lambda.
    - Set up triggers in AWS CloudWatch for the Lambda functions.
 
-6. **Run the Jupyter Notebook:**
+7. **Run the Jupyter Notebook:**
    - Open and run `data_analysis.ipynb` for data extraction and analysis.
 
-7. **Monitor AWS Services:**
+8. **Monitor AWS Services:**
    - Check CloudWatch logs for Lambda functions.
    - Verify data in the AWS S3 bucket.
 
-8. **Explore Transformed Data:**
+9. **Explore Transformed Data:**
    - Analyze transformed data in the AWS S3 bucket.
    - Query data using AWS Athena.
 
-9. **Contributing:**
-   - Open issues or submit pull requests on GitHub.
+10. **Contributing:**
+    - Open issues or submit pull requests on GitHub.
 
-10. **License:**
+11. **License:**
     - This project is licensed under the [MIT License](LICENSE).
 
-These instructions guide users through setting up and executing the project, from data extraction to analysis, using AWS services and Python scripts.
+These instructions guide users through setting up and executing the project, from data extraction to analysis, using AWS services, Python scripts, and the provided requests layer for Lambda.
 
 ### Install Packages:
 ```
