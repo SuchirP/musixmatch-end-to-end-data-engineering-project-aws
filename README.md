@@ -2,7 +2,7 @@
 Explore the Musixmatch Data ETL Pipeline! 🎵 This repository houses Python scripts for data extraction, transformation, and loading from the Musixmatch API. Leveraging AWS serverless architecture, get daily updates on music trends. Join us in shaping the future of music data analysis! 🚀 #DataEngineering #AWS #ETLPipeline #MusicData
 
 ### Architecture:
-![Architecture Diagram](https://github.com/SuchirP/musixmatch-end-to-end-etl-data-engineering-project-aws/blob/main/ETL%20Musixmatch%20AWS%20Architecture.jpg)
+![Architecture Diagram](https://github.com/SuchirP/musixmatch-etl-aws-pipeline/blob/main/musixmatch_etl_aws_architecture.jpg)
 
 ### About Musixmatch API:
 The Musixmatch API offers access to a vast database of music-related data. You can search for lyrics, get track details, retrieve chart data, identify tracks from recordings, and more. It's easy to integrate with your projects and offers various possibilities, like adding lyrics to your player or creating a music trivia game. To start, create a free account, obtain your API key, and begin making requests.
