@@ -3,3 +3,5 @@ Explore the Musixmatch Data ETL Pipeline! 🎵 This repository houses Python scr
 
 ### Architecture:
 ![Architecture Diagram](https://github.com/SuchirP/musixmatch-end-to-end-etl-data-engineering-project-aws/blob/main/ETL%20Musixmatch%20AWS%20Architecture.jpg)
+
+###
