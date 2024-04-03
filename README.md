@@ -84,9 +84,6 @@ Documentation for the Musixmatch API is available here - [Musixmatch API](https:
 10. **Contributing:**
     - Open issues or submit pull requests on GitHub.
 
-11. **License:**
-    - This project is licensed under the [MIT License](LICENSE).
-
 These instructions guide users through setting up and executing the project, from data extraction to analysis, using AWS services, Python scripts, and the provided requests layer for Lambda.
 
 ### Install Packages:
