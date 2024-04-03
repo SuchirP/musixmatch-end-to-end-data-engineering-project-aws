@@ -20,10 +20,6 @@ Documentation for the Musixmatch API is available here - [Musixmatch API](https:
 
 5. **AWS Athena:** AWS Athena enables querying and analysis of transformed data stored in S3 buckets using standard SQL.
 
-Certainly! Here's the revised content without mentioning the `requirements.txt` file:
-
-Got it. Here's the revised content to include the use of the "requests_layer.zip" file:
-
 ### Project Execution Flow
 
 1. **Data Extraction and Cleaning (Jupyter Notebook):**
